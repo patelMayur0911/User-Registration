@@ -39,9 +39,10 @@ public class UserRegistrationValidation {
 //        UC 5 Password minimum 8 Characters
 //        UC 6 at least 1 Upper Case
 //        UC 7 at least 1 numeric number
-        String password = "Patelmayuraaa0";
-        String regex5 = "^(?=.*[A-Z])^(?=.*[0-9])[A-Za-z0-9]{8,}";
-        System.out.println(countryCode+" Validation : " + password.matches(regex5));
+//        UC 8 Has exactly 1 Special Character
+        String password = "Patelmayuraaa0#";
+        String regex5 = "(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z0-9!@#$%^&*]{8,}";
+        System.out.println(password+" Validation : " + password.matches(regex5));
 
     }
 }
