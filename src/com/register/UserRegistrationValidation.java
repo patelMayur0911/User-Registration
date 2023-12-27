@@ -36,10 +36,10 @@ public class UserRegistrationValidation {
         String regex4 = "[0-9]{2,4} [0-9]{6,10}";
         System.out.println(countryCode+" Validation : " + countryCode.matches(regex4));
 
-//        UC 5 Password
-//        minimum 8 Characters
-        String password = "patelmayuraaa";
-        String regex5 = "[A-Za-z0-9]{8,}";
+//        UC 5 Password minimum 8 Characters
+//        UC 6 at least 1 Upper Case
+        String password = "Patelmayuraaa";
+        String regex5 = "^(?=.*[A-Z])[A-Za-z0-9]{8,}";
         System.out.println(countryCode+" Validation : " + password.matches(regex5));
 
     }
